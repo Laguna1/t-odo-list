@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+          <h2>To Do List</h2>
+          <form>
+            <input type="text" placeholder="Add new task...">
+            <button type="submit" onclick="addTask();return false">&plus;</button>
+          </form>
+
+          <ul>
+            <li>
+              <input type="checkbox" onclick="taskComplete(this)">
+              <span>Exercise</span>
+              <i class="fa fa-trash" onclick="removeTask(this)"></i>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

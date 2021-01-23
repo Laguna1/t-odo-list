@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #e1e3ea;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .app {
+    width: 60%;
+  }
+  
+  @media (max-width:768px) {
+    .app {
+      width: 90%;
+    }
+  }
+
+.app h2 {
+  color: white;
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #de3f53;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.app form {
+    display: flex;
+    width: 100%;
+    background-color: #262e4c;
+  }
+  
+  .app form input {
+    border: none;
+    background-color: #3c4979;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .app form button {
+    border: none;
+    color: white;
+    background-color: #1dd2af;
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 10%;
+  }
+
+  .app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+  }
+  
+  .app ul li {
+    padding: 10px;
+    background-color: #262e4c;
+    border-bottom: 1px solid #3a4674;
+  }
+  
+  .app ul li input {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+  }
+  
+  .app ul li input:checked {
+    background-color: #1dd2af;
+  }
+  
+  .app ul li span {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  
+  .app ul li i {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .app ul li i:hover {
+    color: rgb(255, 82, 82);
+  }
+
+  .complete {
+    color: rgba(192, 192, 192, 0.842);
+    text-decoration: line-through;
+  }
+
+  .fa {
+    margin-right: 0.9rem;
+  }
